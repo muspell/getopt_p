@@ -5,7 +5,7 @@ https://github.com/muspell/getopt_p
 
 POSIX compliant getopt() as a single header file interface / implementation.
 
-This library file is intended to provide a POSIX "getopt()" to platforms
+This software is intended to provide a POSIX getopt() to platforms
 that don't have it i.e. Windows. On non-Windows platforms the library
 just includes the <unistd.h> implementation supplied by the platform.
 
@@ -20,7 +20,8 @@ As an alternative, if the receipient of the software does not acknowledge
 public domain software, the recipient may choose to use the software
 under the terms of the "BSD Zero Clause License".
 
-See the comment blocks at the end of the file for the full license texts.
+See the comment blocks at the end of the header file for the full text
+of these licenses.
 
 
 Library Usage
@@ -50,7 +51,7 @@ This getopt() implementation supports POSIX compliant option strings.
 The getopt() function does not permute argv; as per POSIX behaviour it
 stops parsing argv at the first non-option argument.
 
-See the POSIX documentation of getopt() for more detailed usage notes.
+See the POSIX documentation of getopt() for more detailed usage notes :
 https://pubs.opengroup.org/onlinepubs/009696799/functions/getopt.html
 
 
@@ -58,7 +59,7 @@ Use Case
 --------
 
 The main use case is for porting / compiling unix-like utility programs
-for a Windows environment. If this is relevant use-case for you, the MSYS2
+for a Windows platform. If this is a relevant use-case for you, the MSYS2
 development environment may also be of interest : https://www.msys2.org/
 
 The other use case is a pragmatic programmer who needs a simple lightweight
@@ -85,8 +86,8 @@ Rationale for Implementation
 ----------------------------
 
 The POSIX standard <unistd.h> getopt() operates via global variables.
+Conforming to standards enhances portability.
 https://pubs.opengroup.org/onlinepubs/009696799/functions/getopt.html
-Don't change the standard.
 
 Namespace pollution is small and controlled, and typically not a problem.
 
@@ -99,7 +100,7 @@ History
 Based on the AT&T Public Domain getopt() ditributed at the 1985 UNIFORUM
 conference in Dallas.
 
-The source was posted to newsgroup mod.std.unix on 1985-11-03.
+The source was posted to newsgroup mod.std.unix on 1985-11-03 :
 https://www.linux.co.cr/unix-source-code/review/1985/1103.html
 
 * Updated to ANSI C.
