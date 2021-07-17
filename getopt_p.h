@@ -170,10 +170,10 @@ int getopt (int argc, char * const argv[], const char * opt_str);
 /* Only build anything on Windows */
 #ifdef _WIN32
 
-#include <windows.h>			/* _get_pgmptr */
-#include <string.h>				/* strcmp, strchr, strrchr */
-#include <stdio.h>				/* For printing errors (if opterr==1) */
-#include <stddef.h>				/* NULL pointer */
+#include <windows.h>            /* _get_pgmptr */
+#include <string.h>             /* strcmp, strchr, strrchr */
+#include <stdio.h>              /* For printing errors (if opterr==1) */
+#include <stddef.h>             /* NULL pointer */
 
 #ifdef __cplusplus
 extern "C" {
@@ -244,7 +244,7 @@ int getopt (int argc, char * const argv[], const char * opt_str)
             optarg = argv[optind];
         } else {
             /* Argument for this option not in this argv and no more argv */
-			getopt_p_print_err(opt_str, "argument required for option", c);
+            getopt_p_print_err(opt_str, "argument required for option", c);
             optind++;       /* Finished this argv entry, move on */
             arg_idx = 0;    /* Reset to look at start of next argv entry */
             if (opt_str[0] == ':') {    /* POSIX compliant behaviour */
