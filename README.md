@@ -75,11 +75,12 @@ Implentation Notes
 ------------------
 
 * There is no configuration option for a "static" internal linkage
-  implementation of this library
-* This library pollutes the global namespace
+  implementation of the library
+* The library pollutes the global namespace
 * You interact with getopt() via global variables
 * The getopt() function is not re-entrant
 * The library does not use any dynamic memory
+* Any returned strings are pointers into the existing argv string
 * The code compiles cleanly at high warning levels
 
 
