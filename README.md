@@ -65,7 +65,7 @@ development environment may also be of interest : https://www.msys2.org/
 
 The other use case is a pragmatic programmer who needs a simple lightweight
 argument parser, does not need complicated options, prefers standards
-compliance / portability, and would prefer an unencumbered implementation.
+compliance / portability and would prefer an unencumbered implementation.
 
 If you require complicated argument parsing with long verbose options,
 this is not the library for you. See below for some alternatives.
@@ -116,9 +116,10 @@ Alternative Argument Parsers
 ----------------------------
 * parg - Lightweight C argument parser :
   https://github.com/jibsen/parg
-* Arg_parser - C/C++ argument parsers that supports long options :
+* Arg_parser - C/C++ argument parsers that support long options :
   http://www.nongnu.org/arg-parser/arg_parser.html
 * boost::program_options - Boost library argument parser :
   https://www.boost.org/doc/libs/1_76_0/doc/html/program_options.html
 * TCLAP - Template based C++ argument parser :
   http://tclap.sourceforge.net/
+
